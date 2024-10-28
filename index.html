@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora de Redes</title>
+</head>
+    <body>
+        <div class="calculator-container">
+          <div class="calculator-header">
+            <h1>Calculadora de Redes</h1>
+          </div>
+          
+          <div class="form-grid">
+            <div class="input-row-2">
+              <div class="input-group">
+                <label for="ip">Dirección IP</label>
+                <input type="text" id="ip" placeholder="x.x.x.x">
+              </div>
+              <div class="input-group">
+                <label for="mascara">Máscara de Red</label>
+                <input type="text" id="mascara" placeholder="x.x.x.x">
+              </div>
+            </div>
+      
+            <div class="input-row-3">
+              <div class="input-group">
+                <label for="subredes">Cantidad de Subredes</label>
+                <input type="number" id="subredes" min="1">
+              </div>
+              <div class="input-group">
+                <label for="pcs">Cantidad de PCs</label>
+                <input type="number" id="pcs" min="1">
+              </div>
+              <div class="input-group">
+                <label for="routers">Cantidad de Routers</label>
+                <input type="number" id="routers" min="1">
+              </div>
+            </div>
+      
+            <button onclick="calcularSubred()">Calcular Subred</button>
+      
+            <div class="results-container">
+              <h2>Resultados</h2>
+              <pre id="resultados"></pre>
+            </div>
+          </div>
+        </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
+    
